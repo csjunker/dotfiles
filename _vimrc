@@ -1,7 +1,6 @@
 set nocompatible
 :let do_syntax_sel_menu = 1
 
-:set dir=$TEMP
 
 set columns=120
 set lines=50
