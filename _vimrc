@@ -55,6 +55,7 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'elzr/vim-json'
+Plugin 'fboender/bexec'
 
 
 
