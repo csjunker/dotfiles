@@ -2,11 +2,11 @@ set nocompatible
 :let do_syntax_sel_menu = 1
 
 
-set columns=120
-set lines=50
+set columns=140
+set lines=60
 
 if has("gui_running")
-  set lines=60 columns=150
+  set lines=70 columns=170
 endif
 
 source $HOME/vimfiles/gvim_stuff.vim
@@ -16,7 +16,7 @@ source $VIMRUNTIME/mswin.vim
 behave mswin
 
 set autochdir
-set nobk
+set nobackup
 
 
 """"source $HOME/vimfiles/vundle_stuff.vim
@@ -51,15 +51,19 @@ Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'jnurmine/Zenburn'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'scrooloose/nerdtree'
-Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'elzr/vim-json'
 Plugin 'fboender/bexec'
+Plugin 'sheerun/vim-polyglot'
 
 Plugin 'ternjs/tern_for_vim', { 'do': 'npm install' }
 Plugin 'pangloss/vim-javascript'
+Plugin 'aperezdc/vim-template'
+
+Plugin 'scrooloose/nerdtree'
+""Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 "passive features
 Plugin 'tpope/vim-sleuth'
@@ -167,6 +171,10 @@ let python_highlight_all=1
 syntax on
 
 "let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
+let NERDTreeIgnore=['\.sys$', '\~$'] "ignore files in NERDTree
+""autocmd StdinReadPre * let s:std_in=1
+""autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+amenu NERDTree.Toggle  :NERDTreeToggle<CR>
 
 set rnu
 
