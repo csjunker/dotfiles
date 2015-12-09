@@ -33,6 +33,7 @@ call vundle#begin('~/vimfiles/')
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-fugitive'
 " Git plugin not hosted on GitHub
 Plugin 'git://git.wincent.com/command-t.git'
@@ -57,7 +58,16 @@ Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'elzr/vim-json'
 Plugin 'fboender/bexec'
 
+Plugin 'ternjs/tern_for_vim', { 'do': 'npm install' }
+Plugin 'pangloss/vim-javascript'
 
+"passive features
+Plugin 'tpope/vim-sleuth'
+Plugin 'bling/vim-airline'
+Plugin 'valloric/MatchTagAlways'
+
+"Color scheme
+Plugin 'tomasr/molokai'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -76,6 +86,7 @@ filetype plugin indent on    " required
 
 
 set encoding=utf-8
+colorscheme molokai
 
 set splitbelow
 set splitright
