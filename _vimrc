@@ -45,10 +45,8 @@ Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim'}
 
 Plugin 'tmhedberg/SimpylFold'
-Plugin 'vim-scripts/indentpython.vim'
 Bundle 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
-Plugin 'nvie/vim-flake8'
 Plugin 'jnurmine/Zenburn'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'kien/ctrlp.vim'
@@ -57,12 +55,17 @@ Plugin 'elzr/vim-json'
 Plugin 'fboender/bexec'
 Plugin 'sheerun/vim-polyglot'
 
+"Python stuff
+plugin 'klen/python-mode'
+Plugin 'nvie/vim-flake8'
+Plugin 'vim-scripts/indentpython.vim'
+
 Plugin 'ternjs/tern_for_vim', { 'do': 'npm install' }
 Plugin 'pangloss/vim-javascript'
 Plugin 'aperezdc/vim-template'
 
 Plugin 'scrooloose/nerdtree'
-""Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 "passive features
@@ -166,6 +169,8 @@ if 'VIRTUAL_ENV' in os.environ:
   execfile(activate_this, dict(__file__=activate_this))
 EOF
 
+"syntastic
+let g:syntastic_json_checkers=['jsonlint']
 
 let python_highlight_all=1
 syntax on
@@ -180,4 +185,7 @@ set rnu
 
 set clipboard=unnamed
 
-
+set shiftwidth=4
+set tabstop=4
+set nowrap
+set guifont=Lucida_Console:h11:cANSI
