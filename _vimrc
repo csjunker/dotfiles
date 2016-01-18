@@ -24,7 +24,8 @@ filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 """"set rtp+=~/.vim/bundle/Vundle.vim
-set rtp+=~/vimfiles/bundle/Vundle.vim/
+set rtp+=~/vimfiles/Vundle.vim/
+"set rtp+=~/vimfiles/bundle/Vundle.vim/
 """"call vundle#begin()
 call vundle#begin('~/vimfiles/')
 " alternatively, pass a path where Vundle should install plugins
@@ -56,7 +57,7 @@ Plugin 'fboender/bexec'
 Plugin 'sheerun/vim-polyglot'
 
 "Python stuff
-plugin 'klen/python-mode'
+Plugin 'klen/python-mode'
 Plugin 'nvie/vim-flake8'
 Plugin 'vim-scripts/indentpython.vim'
 
