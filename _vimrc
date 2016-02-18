@@ -45,6 +45,9 @@ Plugin 'git://git.wincent.com/command-t.git'
 """"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'rstacruz/sparkup', {'rtp': 'vim'}
 
+"editorconfig.org
+Plugin 'editorconfig/editorconfig-vim'
+
 Plugin 'tmhedberg/SimpylFold'
 Bundle 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
