@@ -64,9 +64,11 @@ Plugin 'klen/python-mode'
 Plugin 'nvie/vim-flake8'
 Plugin 'vim-scripts/indentpython.vim'
 
+"javascript
 Plugin 'ternjs/tern_for_vim', { 'do': 'npm install' }
 Plugin 'pangloss/vim-javascript'
 Plugin 'aperezdc/vim-template'
+Plugin 'walm/jshint.vim'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
