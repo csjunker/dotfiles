@@ -54,6 +54,12 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'elzr/vim-json'
+Plugin 'axiaoxin/vim-json-line-format'
+
+"PYTHON
+Plugin 'tweekmonster/braceless.vim'
+
+
 Plugin 'fboender/bexec'
 Plugin 'sheerun/vim-polyglot'
 
