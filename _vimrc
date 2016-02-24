@@ -58,10 +58,6 @@ Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'elzr/vim-json'
 Plugin 'axiaoxin/vim-json-line-format'
 
-"PYTHON
-Plugin 'tweekmonster/braceless.vim'
-
-
 Plugin 'fboender/bexec'
 Plugin 'sheerun/vim-polyglot'
 
@@ -69,6 +65,7 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'klen/python-mode'
 Plugin 'nvie/vim-flake8'
 Plugin 'vim-scripts/indentpython.vim'
+Plugin 'tweekmonster/braceless.vim'
 
 "javascript
 Plugin 'ternjs/tern_for_vim', { 'do': 'npm install' }
