@@ -138,7 +138,7 @@ endif
 
 
 set diffexpr=MyDiff()
-function MyDiff()
+function! MyDiff()
   let opt = '-a --binary '
   if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
   if &diffopt =~ 'iwhite' | let opt = opt . '-b ' | endif
@@ -150,7 +150,7 @@ function MyDiff()
   if arg3 =~ ' ' | let arg3 = '"' . arg3 . '"' | endif
   let eq = ''
   if $VIMRUNTIME =~ ' '
-    if &sh =~ '\<cmd'
+    if &sh =~ "\<cmd"
       let cmd = '""' . $VIMRUNTIME . '\diff"'
       let eq = '"'
     else
