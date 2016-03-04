@@ -66,6 +66,8 @@ Plugin 'klen/python-mode'
 Plugin 'nvie/vim-flake8'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'tweekmonster/braceless.vim'
+Plugin 'davidhalter/jedi-vim'
+
 
 "javascript
 Plugin 'ternjs/tern_for_vim', { 'do': 'npm install' }
@@ -177,6 +179,9 @@ if 'VIRTUAL_ENV' in os.environ:
   activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
   execfile(activate_this, dict(__file__=activate_this))
 EOF
+
+"" jedi
+let g:jedi#auto_initialization = 0
 
 "syntastic
 let g:syntastic_json_checkers=['jsonlint']
