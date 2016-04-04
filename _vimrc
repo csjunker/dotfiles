@@ -37,7 +37,9 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-fugitive'
 " Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
+""Plugin 'git://git.wincent.com/command-t.git'
+Plugin 'wincent/command-t'
+
 " git repos on your local machine (i.e. when working on your own plugin)
 ""Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
