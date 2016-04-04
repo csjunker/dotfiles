@@ -2,11 +2,12 @@ set nocompatible
 :let do_syntax_sel_menu = 1
 
 
-set columns=140
+set columns=170
 set lines=60
 
 if has("gui_running")
-  set lines=70 columns=170
+  """set lines=70 columns=225
+  set lines=999 columns=999
 endif
 
 source $HOME/vimfiles/gvim_stuff.vim
