@@ -11,6 +11,7 @@ if has("gui_running")
 endif
 
 source $HOME/vimfiles/gvim_stuff.vim
+source $HOME/vimfiles/remap_stuff.vim
 
 ""source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
