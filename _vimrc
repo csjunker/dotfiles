@@ -2,12 +2,13 @@ set nocompatible
 :let do_syntax_sel_menu = 1
 
 
-set columns=170
-set lines=60
+set columns=175
+set lines=65
 
 if has("gui_running")
   """set lines=70 columns=225
   set lines=999 columns=999
+  au GUIEnter * simalt ~x
 endif
 
 source $HOME/vimfiles/gvim_stuff.vim
