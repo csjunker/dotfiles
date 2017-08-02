@@ -1,6 +1,7 @@
 set nocompatible
 :let do_syntax_sel_menu = 1
 
+set encoding=utf-8
 
 set columns=175
 set lines=65
@@ -43,15 +44,19 @@ Plugin 'tpope/vim-fugitive'
 ""Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'wincent/command-t'
 
+" fuzzy file finder :FZF
+Plugin 'junegunn/fzf'
+
+" cs"'   change sourrounding.  cs"</q> "aa" <q>aa</q>
+Plugin 'tpope/vim-surround'
+
+
 " git repos on your local machine (i.e. when working on your own plugin)
 ""Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
 """"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'rstacruz/sparkup', {'rtp': 'vim'}
-
-"editorconfig.org
-Plugin 'editorconfig/editorconfig-vim'
 
 Plugin 'tmhedberg/SimpylFold'
 Bundle 'Valloric/YouCompleteMe'
@@ -92,9 +97,16 @@ Plugin 'valloric/MatchTagAlways'
 "Color scheme
 Plugin 'tomasr/molokai'
 
+"editorconfig.org
+Plugin 'editorconfig/editorconfig-vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
+
+
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
@@ -207,4 +219,4 @@ set clipboard=unnamed
 set shiftwidth=4
 set tabstop=4
 set nowrap
-set guifont=Lucida_Console:h11:cANSI
+set guifont=Consolas:h12:cDEFAULT
